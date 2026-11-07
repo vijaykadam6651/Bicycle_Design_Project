@@ -1,0 +1,28 @@
+# Ignore SolidWorks Lock and Temporary Files
+~\$*
+*.swp
+*.bak
+*.err
+*.log
+
+# Ignore Automatic Master Cam / NC Post Toolpaths
+*.nc
+*.gcode
+
+# Ignore Local OS Metadata and IDE Workspace files
+.DS_Store
+Thumbs.db
+.vs/
+.idea/
+
+# Large Files Tracking Reminder
+# Ensure Git LFS is tracking binary assets to prevent repository bloat:
+# git lfs track "*.sldprt"
+# git lfs track "*.sldasm"
+# git lfs track "*.slddrw"
+
+# Project-local generator environment and scratch renders
+.venv/
+__pycache__/
+tmp/
+*.pyc

@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Road_Frame",
+    "step_path": "01_Parts/Road_Frame.step",
+    "native_path": "01_Parts/Road_Frame.sldprt",
+    "role": "custom concept frame",
+    "solids": 15,
+    "volume_mm3": 292520.3538974444,
+    "valid": true
+  },
+  {
+    "name": "Front_Fork",
+    "step_path": "02_Assemblies/Front_Fork.step",
+    "native_path": "02_Assemblies/Front_Fork.sldprt",
+    "role": "concept reference envelope",
+    "solids": 6,
+    "volume_mm3": 164539.80219614707,
+    "valid": true
+  },
+  {
+    "name": "Front_Wheel",
+    "step_path": "05_Purchased_Components/Front_Wheel.step",
+    "native_path": "05_Purchased_Components/Front_Wheel.sldprt",
+    "role": "concept reference envelope",
+    "solids": 25,
+    "volume_mm3": 2177921.9009400127,
+    "valid": true
+  },
+  {
+    "name": "Rear_Wheel",
+    "step_path": "05_Purchased_Components/Rear_Wheel.step",
+    "native_path": "05_Purchased_Components/Rear_Wheel.sldprt",
+    "role": "concept reference envelope",
+    "solids": 25,
+    "volume_mm3": 2191493.5812035194,
+    "valid": true
+  },
+  {
+    "name": "Cockpit",
+    "step_path": "05_Purchased_Components/Cockpit.step",
+    "native_path": "05_Purchased_Components/Cockpit.sldprt",
+    "role": "concept reference envelope",
+    "solids": 8,
+    "volume_mm3": 130086.13456798355,
+    "valid": true
+  },
+  {
+    "name": "Seatpost_Saddle",
+    "step_path": "05_Purchased_Components/Seatpost_Saddle.step",
+    "native_path": "05_Purchased_Components/Seatpost_Saddle.sldprt",
+    "role": "concept reference envelope",
+    "solids": 2,
+    "volume_mm3": 476028.256038867,
+    "valid": true
+  },
+  {
+    "name": "Crankset",
+    "step_path": "05_Purchased_Components/Crankset.step",
+    "native_path": "05_Purchased_Components/Crankset.sldprt",
+    "role": "concept reference envelope",
+    "solids": 13,
+    "volume_mm3": 427843.1208533384,
+    "valid": true
+  },
+  {
+    "name": "Rear_Sprocket",
+    "step_path": "05_Purchased_Components/Rear_Sprocket.step",
+    "native_path": "05_Purchased_Components/Rear_Sprocket.sldprt",
+    "role": "concept reference envelope",
+    "solids": 1,
+    "volume_mm3": 12566.37061435917,
+    "valid": true
+  },
+  {
+    "name": "Chain_Path",
+    "step_path": "05_Purchased_Components/Chain_Path.step",
+    "native_path": "05_Purchased_Components/Chain_Path.sldprt",
+    "role": "concept reference envelope",
+    "solids": 2,
+    "volume_mm3": 10165.906458484871,
+    "valid": true
+  }
+]

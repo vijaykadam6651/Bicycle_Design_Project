@@ -1,0 +1,10 @@
+check,measured_mm,target_mm,status,method,note
+Rear tire to chainstays,7.378122,6,PASS_NOMINAL,OCCT BRep minimum distance,
+Rear tire to seatstays,10.57241,6,PASS_NOMINAL,OCCT BRep minimum distance,
+Rear tire to seat tube,13.163112,6,PASS_NOMINAL,OCCT BRep minimum distance,
+Front tire to down tube,23.643517,6,PASS_NOMINAL,OCCT BRep minimum distance,
+Front tire to fork,13.469506,6,PASS_NOMINAL,OCCT BRep minimum distance,
+Chainring envelope to chainstays,4.344048,3,PASS_NOMINAL,OCCT BRep minimum distance,"3 mm is an internal concept target, not supplied by brief."
+Chain strands to chainstays,28.447031,1,PASS_NOMINAL,OCCT BRep minimum distance,"Only two straight strands; links, slack and shifts not modeled."
+Full crank-arm sweep to frame,17.484901,3,PASS_NOMINAL,OCCT BRep minimum distance,172.5 mm crank +9 mm arm radius; 18 mm-wide swept disk excludes spindle contacts.
+Front tire steering samples to frame,23.643517,6,PASS_SAMPLED,"BRep distance at -35..+35 degrees, 5 degree increments",Discrete samples do not prove continuous swept clearance.

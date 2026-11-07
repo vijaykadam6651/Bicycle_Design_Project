@@ -1,0 +1,288 @@
+{
+  "status": "NOMINAL CONCEPT GEOMETRY ONLY",
+  "checks": [
+    {
+      "check": "Rear tire to chainstays",
+      "measured_mm": 7.378122,
+      "target_mm": 6,
+      "status": "PASS_NOMINAL",
+      "method": "OCCT BRep minimum distance",
+      "note": ""
+    },
+    {
+      "check": "Rear tire to seatstays",
+      "measured_mm": 10.57241,
+      "target_mm": 6,
+      "status": "PASS_NOMINAL",
+      "method": "OCCT BRep minimum distance",
+      "note": ""
+    },
+    {
+      "check": "Rear tire to seat tube",
+      "measured_mm": 13.163112,
+      "target_mm": 6,
+      "status": "PASS_NOMINAL",
+      "method": "OCCT BRep minimum distance",
+      "note": ""
+    },
+    {
+      "check": "Front tire to down tube",
+      "measured_mm": 23.643517,
+      "target_mm": 6,
+      "status": "PASS_NOMINAL",
+      "method": "OCCT BRep minimum distance",
+      "note": ""
+    },
+    {
+      "check": "Front tire to fork",
+      "measured_mm": 13.469506,
+      "target_mm": 6,
+      "status": "PASS_NOMINAL",
+      "method": "OCCT BRep minimum distance",
+      "note": ""
+    },
+    {
+      "check": "Chainring envelope to chainstays",
+      "measured_mm": 4.344048,
+      "target_mm": 3,
+      "status": "PASS_NOMINAL",
+      "method": "OCCT BRep minimum distance",
+      "note": "3 mm is an internal concept target, not supplied by brief."
+    },
+    {
+      "check": "Chain strands to chainstays",
+      "measured_mm": 28.447031,
+      "target_mm": 1,
+      "status": "PASS_NOMINAL",
+      "method": "OCCT BRep minimum distance",
+      "note": "Only two straight strands; links, slack and shifts not modeled."
+    },
+    {
+      "check": "Full crank-arm sweep to frame",
+      "measured_mm": 17.484901,
+      "target_mm": 3,
+      "status": "PASS_NOMINAL",
+      "method": "OCCT BRep minimum distance",
+      "note": "172.5 mm crank +9 mm arm radius; 18 mm-wide swept disk excludes spindle contacts."
+    },
+    {
+      "check": "Front tire steering samples to frame",
+      "measured_mm": 23.643517,
+      "target_mm": 6,
+      "status": "PASS_SAMPLED",
+      "method": "BRep distance at -35..+35 degrees, 5 degree increments",
+      "note": "Discrete samples do not prove continuous swept clearance."
+    }
+  ],
+  "steering_samples": [
+    {
+      "steer_deg": -35,
+      "gap_mm": 40.143499
+    },
+    {
+      "steer_deg": -30,
+      "gap_mm": 40.143499
+    },
+    {
+      "steer_deg": -25,
+      "gap_mm": 37.763971
+    },
+    {
+      "steer_deg": -20,
+      "gap_mm": 34.8054
+    },
+    {
+      "steer_deg": -15,
+      "gap_mm": 31.365894
+    },
+    {
+      "steer_deg": -10,
+      "gap_mm": 27.7665
+    },
+    {
+      "steer_deg": -5,
+      "gap_mm": 24.817351
+    },
+    {
+      "steer_deg": 0,
+      "gap_mm": 23.643517
+    },
+    {
+      "steer_deg": 5,
+      "gap_mm": 24.817351
+    },
+    {
+      "steer_deg": 10,
+      "gap_mm": 27.7665
+    },
+    {
+      "steer_deg": 15,
+      "gap_mm": 31.365894
+    },
+    {
+      "steer_deg": 20,
+      "gap_mm": 34.8054
+    },
+    {
+      "steer_deg": 25,
+      "gap_mm": 37.763971
+    },
+    {
+      "steer_deg": 30,
+      "gap_mm": 40.143499
+    },
+    {
+      "steer_deg": 35,
+      "gap_mm": 40.143499
+    }
+  ],
+  "exported_components": [
+    {
+      "name": "Road_Frame",
+      "step_path": "01_Parts/Road_Frame.step",
+      "native_path": "01_Parts/Road_Frame.sldprt",
+      "role": "custom concept frame",
+      "solids": 15,
+      "volume_mm3": 292520.3538974444,
+      "valid": true
+    },
+    {
+      "name": "Front_Fork",
+      "step_path": "02_Assemblies/Front_Fork.step",
+      "native_path": "02_Assemblies/Front_Fork.sldprt",
+      "role": "concept reference envelope",
+      "solids": 6,
+      "volume_mm3": 164539.80219614707,
+      "valid": true
+    },
+    {
+      "name": "Front_Wheel",
+      "step_path": "05_Purchased_Components/Front_Wheel.step",
+      "native_path": "05_Purchased_Components/Front_Wheel.sldprt",
+      "role": "concept reference envelope",
+      "solids": 25,
+      "volume_mm3": 2177921.9009400127,
+      "valid": true
+    },
+    {
+      "name": "Rear_Wheel",
+      "step_path": "05_Purchased_Components/Rear_Wheel.step",
+      "native_path": "05_Purchased_Components/Rear_Wheel.sldprt",
+      "role": "concept reference envelope",
+      "solids": 25,
+      "volume_mm3": 2191493.5812035194,
+      "valid": true
+    },
+    {
+      "name": "Cockpit",
+      "step_path": "05_Purchased_Components/Cockpit.step",
+      "native_path": "05_Purchased_Components/Cockpit.sldprt",
+      "role": "concept reference envelope",
+      "solids": 8,
+      "volume_mm3": 130086.13456798355,
+      "valid": true
+    },
+    {
+      "name": "Seatpost_Saddle",
+      "step_path": "05_Purchased_Components/Seatpost_Saddle.step",
+      "native_path": "05_Purchased_Components/Seatpost_Saddle.sldprt",
+      "role": "concept reference envelope",
+      "solids": 2,
+      "volume_mm3": 476028.256038867,
+      "valid": true
+    },
+    {
+      "name": "Crankset",
+      "step_path": "05_Purchased_Components/Crankset.step",
+      "native_path": "05_Purchased_Components/Crankset.sldprt",
+      "role": "concept reference envelope",
+      "solids": 13,
+      "volume_mm3": 427843.1208533384,
+      "valid": true
+    },
+    {
+      "name": "Rear_Sprocket",
+      "step_path": "05_Purchased_Components/Rear_Sprocket.step",
+      "native_path": "05_Purchased_Components/Rear_Sprocket.sldprt",
+      "role": "concept reference envelope",
+      "solids": 1,
+      "volume_mm3": 12566.37061435917,
+      "valid": true
+    },
+    {
+      "name": "Chain_Path",
+      "step_path": "05_Purchased_Components/Chain_Path.step",
+      "native_path": "05_Purchased_Components/Chain_Path.sldprt",
+      "role": "concept reference envelope",
+      "solids": 2,
+      "volume_mm3": 10165.906458484871,
+      "valid": true
+    }
+  ],
+  "step_roundtrip": [
+    {
+      "name": "Road_Frame",
+      "valid": true,
+      "solid_count": 15,
+      "volume_relative_error": 4.2682092915660014e-08
+    },
+    {
+      "name": "Front_Fork",
+      "valid": true,
+      "solid_count": 6,
+      "volume_relative_error": 1.4840247421770246e-13
+    },
+    {
+      "name": "Front_Wheel",
+      "valid": true,
+      "solid_count": 25,
+      "volume_relative_error": 4.6610560548232994e-14
+    },
+    {
+      "name": "Rear_Wheel",
+      "valid": true,
+      "solid_count": 25,
+      "volume_relative_error": 4.695936386840516e-14
+    },
+    {
+      "name": "Cockpit",
+      "valid": true,
+      "solid_count": 8,
+      "volume_relative_error": 1.0313832358161529e-13
+    },
+    {
+      "name": "Seatpost_Saddle",
+      "valid": true,
+      "solid_count": 2,
+      "volume_relative_error": 3.2648157471196125e-14
+    },
+    {
+      "name": "Crankset",
+      "valid": true,
+      "solid_count": 13,
+      "volume_relative_error": 3.7005348448480485e-14
+    },
+    {
+      "name": "Rear_Sprocket",
+      "valid": true,
+      "solid_count": 1,
+      "volume_relative_error": 2.2002087780463715e-14
+    },
+    {
+      "name": "Chain_Path",
+      "valid": true,
+      "solid_count": 2,
+      "volume_relative_error": 1.2578805007845038e-13
+    }
+  ],
+  "assembly_roundtrip_valid": true,
+  "assembly_roundtrip_solids": 97,
+  "unverified": [
+    "Native SolidWorks rebuild and mates",
+    "Continuous steering and drivetrain motion",
+    "Actual supplier tires, rims, hubs, bearings, brakes, gears and pedals",
+    "Toe overlap and rider fit",
+    "Welds, bent stays, tolerances and deformation",
+    "Static strength, fatigue, impact and applicable testing"
+  ]
+}

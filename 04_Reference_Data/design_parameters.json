@@ -1,0 +1,257 @@
+{
+  "revision": "A",
+  "date": "2026-11-07",
+  "units": "mm",
+  "coordinate_system": "X forward; Y left; Z up; origin bottom bracket",
+  "status": "CONCEPT ONLY - NOT FOR MANUFACTURE",
+  "pipeline": "Welded round-tube steel concept; grade and joint design unselected",
+  "parameters": {
+    "wheelbase_mm": 990,
+    "head_angle_deg": 73,
+    "seat_angle_deg": 73.5,
+    "bb_drop_mm": 70,
+    "chainstay_mm": 410,
+    "wheel_od_mm": 680,
+    "tire_width_mm": 25,
+    "bead_seat_diameter_mm": 622,
+    "seat_tube_cc_mm": 520,
+    "head_tube_mm": 140,
+    "fork_offset_mm": 45,
+    "fork_axle_crown_mm": 370,
+    "lower_headset_stack_mm": 12,
+    "down_tube_junction_offset_mm": 35,
+    "front_hub_width_mm": 100,
+    "rear_hub_width_mm": 130,
+    "bb_shell_width_mm": 68,
+    "bb_shell_od_mm": 40,
+    "bb_shell_id_mm": 34,
+    "crank_length_mm": 172.5,
+    "chainring_radius_mm": 105,
+    "chainring_y_mm": -45,
+    "chainring_thickness_mm": 4,
+    "rear_sprocket_radius_mm": 35,
+    "rear_sprocket_y_mm": -45,
+    "illustrative_chainring_teeth": 50,
+    "illustrative_sprocket_teeth": 17,
+    "steering_check_deg": 35,
+    "target_min_tire_clearance_mm": 6
+  },
+  "derived": {
+    "reach_mm": 391.171110514201,
+    "stack_mm": 553.4076913846744,
+    "effective_top_tube_mm": 555.0979369181518,
+    "trail_mm": 56.892302654022885,
+    "bb_ground_height_mm": 270
+  },
+  "steering_axis": [
+    -0.29237170472273677,
+    0,
+    0.9563047559630354
+  ],
+  "points": {
+    "BB": [
+      0,
+      0,
+      0
+    ],
+    "RearAxle": [
+      -403.9801975344831,
+      0,
+      70
+    ],
+    "FrontAxle": [
+      586.0198024655169,
+      0,
+      70
+    ],
+    "ForkCrown": [
+      435.61160963205697,
+      0.0,
+      408.049368478293
+    ],
+    "HeadLower": [
+      432.10314917538415,
+      0.0,
+      419.52502554984943
+    ],
+    "HeadUpper": [
+      391.171110514201,
+      0.0,
+      553.4076913846744
+    ],
+    "SeatTop": [
+      -147.68797924603984,
+      0,
+      498.5862621314604
+    ],
+    "DownTubeHead": [
+      421.87013951008834,
+      0.0,
+      452.9956920085557
+    ],
+    "ChainStartL": [
+      0,
+      26,
+      0
+    ],
+    "ChainKnee1L": [
+      -110,
+      30,
+      34
+    ],
+    "ChainKnee2L": [
+      -180,
+      40,
+      50
+    ],
+    "RearDropoutL": [
+      -403.9801975344831,
+      65,
+      70
+    ],
+    "SeatStayStartL": [
+      -147.68797924603984,
+      12,
+      498.5862621314604
+    ],
+    "ForkShoulderL": [
+      435.61160963205697,
+      37.0,
+      408.049368478293
+    ],
+    "FrontDropoutL": [
+      586.0198024655169,
+      50,
+      70
+    ],
+    "ChainStartR": [
+      0,
+      -26,
+      0
+    ],
+    "ChainKnee1R": [
+      -110,
+      -30,
+      34
+    ],
+    "ChainKnee2R": [
+      -180,
+      -40,
+      50
+    ],
+    "RearDropoutR": [
+      -403.9801975344831,
+      -65,
+      70
+    ],
+    "SeatStayStartR": [
+      -147.68797924603984,
+      -12,
+      498.5862621314604
+    ],
+    "ForkShoulderR": [
+      435.61160963205697,
+      -37.0,
+      408.049368478293
+    ],
+    "FrontDropoutR": [
+      586.0198024655169,
+      -50,
+      70
+    ]
+  },
+  "frame_members": [
+    {
+      "name": "SeatTube",
+      "start": "BB",
+      "end": "SeatTop",
+      "od_mm": 28.6,
+      "wall_mm": 1.0
+    },
+    {
+      "name": "TopTube",
+      "start": "SeatTop",
+      "end": "HeadUpper",
+      "od_mm": 28.6,
+      "wall_mm": 0.9
+    },
+    {
+      "name": "DownTube",
+      "start": "BB",
+      "end": "DownTubeHead",
+      "od_mm": 35.0,
+      "wall_mm": 1.1
+    },
+    {
+      "name": "HeadTube",
+      "start": "HeadLower",
+      "end": "HeadUpper",
+      "od_mm": 38.0,
+      "wall_mm": 2.0
+    },
+    {
+      "name": "ChainstayL1",
+      "start": "ChainStartL",
+      "end": "ChainKnee1L",
+      "od_mm": 18,
+      "wall_mm": 1
+    },
+    {
+      "name": "ChainstayL2",
+      "start": "ChainKnee1L",
+      "end": "ChainKnee2L",
+      "od_mm": 18,
+      "wall_mm": 1
+    },
+    {
+      "name": "ChainstayL3",
+      "start": "ChainKnee2L",
+      "end": "RearDropoutL",
+      "od_mm": 18,
+      "wall_mm": 1
+    },
+    {
+      "name": "SeatstayL",
+      "start": "SeatStayStartL",
+      "end": "RearDropoutL",
+      "od_mm": 14,
+      "wall_mm": 0.9
+    },
+    {
+      "name": "ChainstayR1",
+      "start": "ChainStartR",
+      "end": "ChainKnee1R",
+      "od_mm": 18,
+      "wall_mm": 1
+    },
+    {
+      "name": "ChainstayR2",
+      "start": "ChainKnee1R",
+      "end": "ChainKnee2R",
+      "od_mm": 18,
+      "wall_mm": 1
+    },
+    {
+      "name": "ChainstayR3",
+      "start": "ChainKnee2R",
+      "end": "RearDropoutR",
+      "od_mm": 18,
+      "wall_mm": 1
+    },
+    {
+      "name": "SeatstayR",
+      "start": "SeatStayStartR",
+      "end": "RearDropoutR",
+      "od_mm": 14,
+      "wall_mm": 0.9
+    }
+  ],
+  "assumptions": [
+    "Medium-size layout; rider fit not evaluated.",
+    "680 mm OD x 25 mm width is a design envelope, not a verified supplier tire.",
+    "100/130 mm hub spacing and rim-brake layout are project assumptions, not a purchased-system specification.",
+    "Tube sections are nominal modelling values, not strength-qualified dimensions.",
+    "Stay bends, dropout detail, bearing seats, brake mounts, welds and threads require detailed engineering.",
+    "Supplier components are simplified reference geometry; no supplier CAD imported."
+  ]
+}

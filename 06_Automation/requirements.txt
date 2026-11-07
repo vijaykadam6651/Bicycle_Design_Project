@@ -1,0 +1,4 @@
+# Python 3.12, Windows x64. Direct generator dependencies.
+cadquery==2.6.1
+ezdxf==1.4.3
+reportlab==4.4.3

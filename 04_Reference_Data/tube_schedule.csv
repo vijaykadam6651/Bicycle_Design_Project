@@ -1,0 +1,13 @@
+member,start_point,end_point,OD_mm,wall_mm,centerline_length_mm,note
+SeatTube,BB,SeatTop,28.6,1.0,520.0,Reference length before coping; not a cut length
+TopTube,SeatTop,HeadUpper,28.6,0.9,541.641,Reference length before coping; not a cut length
+DownTube,BB,DownTubeHead,35.0,1.1,619.015,Reference length before coping; not a cut length
+HeadTube,HeadLower,HeadUpper,38.0,2.0,140.0,Reference length before coping; not a cut length
+ChainstayL1,ChainStartL,ChainKnee1L,18,1,115.204,Reference length before coping; not a cut length
+ChainstayL2,ChainKnee1L,ChainKnee2L,18,1,72.498,Reference length before coping; not a cut length
+ChainstayL3,ChainKnee2L,RearDropoutL,18,1,226.257,Reference length before coping; not a cut length
+SeatstayL,SeatStayStartL,RearDropoutL,14,0.9,502.176,Reference length before coping; not a cut length
+ChainstayR1,ChainStartR,ChainKnee1R,18,1,115.204,Reference length before coping; not a cut length
+ChainstayR2,ChainKnee1R,ChainKnee2R,18,1,72.498,Reference length before coping; not a cut length
+ChainstayR3,ChainKnee2R,RearDropoutR,18,1,226.257,Reference length before coping; not a cut length
+SeatstayR,SeatStayStartR,RearDropoutR,14,0.9,502.176,Reference length before coping; not a cut length
