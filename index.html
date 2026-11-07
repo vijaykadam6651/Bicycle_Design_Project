@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142d32">
+  <meta name="description" content="Engineering journal for a parameterized 700c road bicycle concept, with CAD, geometry, nominal clearances and open validation work.">
+  <title>Road Bicycle Design Project | Engineering Journal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.171.0/build/three.module.js"}}</script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to project</a>
+  <header class="topbar">
+    <a class="wordmark" href="#top"><span class="mark">BD</span><span>BICYCLE<br>DESIGN PROJECT</span></a>
+    <nav aria-label="Main navigation"><a href="#brief">Brief</a><a href="#geometry">Geometry</a><a href="#validation">Validation</a><a href="#files">CAD files</a></nav>
+    <a class="top-link" href="https://github.com/vijaykadam6651/Bicycle_Design_Project" target="_blank" rel="noreferrer">SOURCE REPOSITORY ↗</a>
+  </header>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><i></i> REVISION A <b>/</b> 07 NOV 2026 <b>/</b> CONCEPT STUDY</p>
+        <h1>Road bicycle<br><span>design project</span></h1>
+        <p class="hero-deck">A 700c road-bike layout, built from a shared coordinate model and checked in the open.</p>
+        <a class="text-link" href="#brief">Enter the engineering journal <span>↓</span></a>
+      </div>
+      <figure class="hero-visual">
+        <img src="03_Drawings/Bicycle_Concept_Preview.png" alt="CAD-derived isometric preview of the road bicycle concept assembly">
+        <figcaption><span>ASSEMBLY / ISOMETRIC</span><span>CAD-DERIVED PREVIEW · NOT A PHOTOGRAPH</span></figcaption>
+      </figure>
+      <div class="hero-bottom"><span>WELDED ROUND-TUBE CONCEPT</span><span>ALL DIMENSIONS IN MILLIMETRES</span><span>NOT FOR MANUFACTURE</span></div>
+    </section>
+
+    <section class="brief-section section-pad" id="brief">
+      <div><p class="eyebrow orange">01 / THE BRIEF</p><h2>Start with the<br>hard numbers.</h2></div>
+      <div class="brief-content">
+        <p class="lead">The starting brief called for a responsive 700c road-bike layout. This revision turns those targets into a coherent frame skeleton, an exchange-CAD assembly and a record of what has, and has not, been checked.</p>
+        <div class="question-line"><span>?</span><p><strong>The design question</strong><br>Can the baseline geometry meet the stated envelope and nominal tire clearances while staying traceable back to one parameter set?</p></div>
+        <div class="brief-foot"><span>DESIGN INTENT</span><span>HIGH-PERFORMANCE ROAD LAYOUT</span><span>MEDIUM-SIZE GEOMETRY</span></div>
+      </div>
+    </section>
+
+    <section class="geometry-section" id="geometry">
+      <div class="section-heading section-pad"><div><p class="eyebrow orange">02 / MASTER GEOMETRY</p><h2>One coordinate system.<br>A whole bicycle.</h2></div><p class="section-aside">The bottom bracket is the origin. X points forward, Y left, and Z up. The same points drive the skeleton, tube schedule and exchange model.</p></div>
+      <div class="metric-band" aria-label="Key design dimensions">
+        <div><small>WHEELBASE</small><strong data-param="wheelbase_mm">990</strong><span>mm</span></div>
+        <div><small>HEAD / SEAT ANGLE</small><strong>73.0 / 73.5</strong><span>degrees</span></div>
+        <div><small>CHAINSTAY</small><strong data-param="chainstay_mm">410</strong><span>mm · BB to rear axle</span></div>
+        <div><small>BB DROP</small><strong data-param="bb_drop_mm">70</strong><span>mm</span></div>
+        <div><small>WHEEL ENVELOPE</small><strong data-param="wheel_od_mm">680</strong><span>mm outer diameter</span></div>
+      </div>
+      <div class="geometry-detail section-pad">
+        <div class="geometry-sketch">
+          <div class="sketch-label"><span>LAYOUT / SIDE ELEVATION</span><span>NOT TO SCALE</span></div>
+          <svg viewBox="0 0 820 390" role="img" aria-labelledby="sketch-title sketch-desc">
+            <title id="sketch-title">Road bicycle master geometry side elevation</title>
+            <desc id="sketch-desc">Simplified frame layout showing tubes, axles, wheelbase and bottom bracket drop.</desc>
+            <g class="sketch-wheels"><circle cx="150" cy="215" r="132"/><circle cx="670" cy="215" r="132"/><circle cx="150" cy="215" r="7"/><circle cx="670" cy="215" r="7"/></g>
+            <g class="sketch-frame"><path d="M150 215 L315 215 L286 83 L472 72 L530 174 L315 215 M286 83 L472 72 M315 215 L150 215 M286 83 L150 215 M530 174 L670 215 M315 215 L670 215"/></g>
+            <g class="sketch-accent"><path d="M530 174 L670 215 M472 72 L499 118 M315 215 L286 83"/></g>
+            <g class="sketch-dims"><path d="M150 354 H670 M150 344 V364 M670 344 V364 M315 215 V281 M315 281 H348 M338 215 V281"/></g>
+            <g class="sketch-labels"><text x="410" y="344">990 WHEELBASE</text><text x="351" y="255">70 BB DROP</text><text x="404" y="55">TOP TUBE</text><text x="370" y="148">DOWN TUBE</text><text x="260" y="137">SEAT TUBE</text><text x="496" y="137">HEAD TUBE</text><text x="175" y="239">REAR AXLE</text><text x="623" y="239">FRONT AXLE</text></g>
+          </svg>
+          <p class="sketch-note">Side-view construction sketch, redrawn from master points. Use the dimensioned drawing for the complete concept layout.</p>
+        </div>
+        <aside class="geometry-notes"><p class="eyebrow">GEOMETRY NOTES</p>
+          <dl><div><dt>Reach</dt><dd data-derived="reach_mm">391.2 mm</dd></div><div><dt>Stack</dt><dd data-derived="stack_mm">553.4 mm</dd></div><div><dt>Geometric trail</dt><dd data-derived="trail_mm">56.9 mm</dd></div><div><dt>Fork offset</dt><dd data-param="fork_offset_mm">45 mm</dd></div><div><dt>Nominal tire</dt><dd>25 × 680 mm envelope</dd></div></dl>
+          <p class="note-flag"><b>!</b><span>Wheel and tire dimensions are an envelope, not a verified supplier combination. Rider fit and component standards are still open.</span></p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="explorer-section" id="assembly">
+      <div class="section-heading section-pad"><div><p class="eyebrow orange">03 / ASSEMBLY EXPLORER</p><h2>Look around<br>the concept.</h2></div><p class="section-aside">An interactive schematic derived from project coordinates. It is not the STEP assembly itself.</p></div>
+      <div class="explorer-layout">
+        <div class="viewer-shell">
+          <div class="viewer-top"><span><i></i> CONCEPT ASSEMBLY</span><div><button class="view-button active" data-view="iso" aria-pressed="true">ISO</button><button class="view-button" data-view="side" aria-pressed="false">SIDE</button><button class="reset-view" id="reset-view" aria-label="Reset view">↺</button></div></div>
+          <canvas id="bike-view" aria-label="Interactive schematic bicycle model. Drag to orbit and scroll to zoom."></canvas>
+          <div class="viewer-fallback" id="viewer-fallback"><img src="03_Drawings/Bicycle_Concept_Preview.png" alt="CAD preview of the road bicycle assembly"><span>Interactive view unavailable; showing the CAD preview.</span></div>
+          <div class="viewer-bottom"><span>SCHEMATIC GEOMETRY / NOT A MANUFACTURING MODEL</span><span>DRAG TO ORBIT · SCROLL TO ZOOM</span></div>
+        </div>
+        <aside class="part-panel"><p class="eyebrow">ASSEMBLY REGISTER</p>
+          <div class="part-list"><button class="part-button selected" data-part="frame" aria-pressed="true">01 &nbsp; Frame</button><button class="part-button" data-part="fork" aria-pressed="false">02 &nbsp; Fork & steering</button><button class="part-button" data-part="wheels" aria-pressed="false">03 &nbsp; Wheel envelopes</button><button class="part-button" data-part="drive" aria-pressed="false">04 &nbsp; Drivetrain</button></div>
+          <div class="part-note" aria-live="polite"><span>CONCEPT MODEL</span><h3 id="part-title">Round-tube frame</h3><p id="part-copy">Twelve nominal hollow members make up the frame layout. Tube grade, wall sizing and joint details have not been structurally qualified.</p></div>
+          <a class="text-link dark-link" href="02_Assemblies/Bicycle_Main_Assembly.step">Open assembly STEP <span>↗</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="photo-section section-pad" id="build-journal">
+      <div class="section-heading"><div><p class="eyebrow orange">04 / VISUAL STUDY</p><h2>Workshop, imagined.</h2></div><p class="section-aside">This AI-generated scene is illustrative only. It does not document fabrication or work performed on this project.</p></div>
+      <div class="photo-grid">
+        <figure><img src="media/ai-frame-jig.png" alt="AI-generated illustrative image of a teal road bicycle in a softly lit workshop"><figcaption><span>AI-GENERATED IMAGE · ILLUSTRATIVE ONLY</span><span>NOT A PROJECT PHOTOGRAPH</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="validation-section section-pad" id="validation">
+      <div class="validation-head"><div><p class="eyebrow orange">05 / NOMINAL CLEARANCE CHECKS</p><h2>Checks, with context.</h2></div><div class="validation-stamp"><i></i>NOMINAL CONCEPT<br>GEOMETRY ONLY</div></div>
+      <p class="validation-intro">Distances below come from boundary-representation checks on the concept solids. “Pass” means this nominal model cleared its stated target; it is not evidence of production clearance or bicycle safety.</p>
+      <div class="clearance-layout"><div class="clearance-chart"><div class="chart-heading"><span>MEASURED MINIMUM GAP</span><span>TARGET SHOWN IN ORANGE</span></div>
+        <div id="clearance-bars" aria-live="polite">
+          <div class="clearance-row"><span>Rear tire / chainstays</span><div class="bar-track"><i style="--bar:24.6%"></i><b style="--target:20%"></b></div><strong>7.38 mm</strong></div>
+          <div class="clearance-row"><span>Rear tire / seatstays</span><div class="bar-track"><i style="--bar:35.2%"></i><b style="--target:20%"></b></div><strong>10.57 mm</strong></div>
+          <div class="clearance-row"><span>Rear tire / seat tube</span><div class="bar-track"><i style="--bar:43.9%"></i><b style="--target:20%"></b></div><strong>13.16 mm</strong></div>
+          <div class="clearance-row"><span>Front tire / down tube</span><div class="bar-track"><i style="--bar:78.8%"></i><b style="--target:20%"></b></div><strong>23.64 mm</strong></div>
+          <div class="clearance-row"><span>Front tire / fork</span><div class="bar-track"><i style="--bar:44.9%"></i><b style="--target:20%"></b></div><strong>13.47 mm</strong></div>
+        </div><div class="chart-axis"><span>0</span><span>10</span><span>20</span><span>30 mm</span></div>
+      </div><aside class="validation-notes"><div class="result-number"><strong>7.38</strong><span>mm</span><small>SMALLEST TIRE-TO-FRAME GAP<br>REAR TIRE / CHAINSTAYS</small></div><p>Measured against a 6 mm nominal target. Tire growth, wheel flex, manufacturing tolerance and debris are not included.</p><a class="text-link" href="04_Reference_Data/validation_results.json">Read the full validation record ↗</a></aside></div>
+      <div class="open-checks"><b>STILL TO VERIFY</b><span>Continuous steering sweep</span><span>Actual tire and rim</span><span>Pedal / toe overlap</span><span>Structure and fatigue</span></div>
+    </section>
+
+    <section class="journey-section section-pad"><div class="section-heading"><div><p class="eyebrow orange">06 / ENGINEERING JOURNEY</p><h2>From brief to<br>handoff.</h2></div><p class="section-aside">A record of work in this revision, and the engineering gates that remain before anything could be built.</p></div>
+      <div class="timeline">
+        <article class="timeline-item"><span>01</span><div><small>COMPLETE / EXCHANGE</small><h3>Map the geometry</h3><p>Translated supplied road-bike targets into a medium-size coordinate layout. The bottom bracket is the shared origin; major points are exported to DXF and STEP skeleton files.</p><a href="04_Reference_Data/design_parameters.json">Parameter source ↗</a></div></article>
+        <article class="timeline-item"><span>02</span><div><small>COMPLETE / CONCEPT</small><h3>Build the assembly</h3><p>Generated a welded round-tube frame concept and static assembly of simplified reference envelopes. STEP components were re-imported and checked for valid solids.</p><a href="04_Reference_Data/component_manifest.json">Component register ↗</a></div></article>
+        <article class="timeline-item"><span>03</span><div><small>COMPLETE / NOMINAL CHECK</small><h3>Check the clearances</h3><p>Recorded tire, chainring and crank-envelope distances, plus discrete steering samples. These checks cover nominal geometry only.</p><a href="04_Reference_Data/clearance_results.csv">Clearance table ↗</a></div></article>
+        <article class="timeline-item pending"><span>04</span><div><small>NEXT / ENGINEERING REQUIRED</small><h3>Resolve the real interfaces</h3><p>Select supplier wheels, tires, hubs, headset, bottom bracket and brakes. Rebuild detailed joints, establish rider fit, and repeat checks with actual components.</p><em>OPEN DESIGN WORK</em></div></article>
+        <article class="timeline-item pending"><span>05</span><div><small>RELEASE GATE / NOT STARTED</small><h3>Qualify before manufacture</h3><p>Define material and weld procedures, tolerances and load cases. Complete structural review and applicable physical testing before any manufacturing release.</p><em>NOT FOR MANUFACTURE</em></div></article>
+      </div>
+    </section>
+
+    <section class="files-section section-pad" id="files"><div class="section-heading"><div><p class="eyebrow">07 / PROJECT FILES</p><h2>Take the work<br>with you.</h2></div><p class="section-aside">Source data, drawings and exchange geometry are versioned together. Binary CAD and drawing files are stored with Git LFS.</p></div>
+      <div class="file-grid">
+        <a href="03_Drawings/Road_Bicycle_Design_Project.pdf"><small>PDF / 6 SHEETS</small><strong>Concept report &<br>dimensioned drawings</strong><span>A3 landscape · concept only ↗</span></a>
+        <a href="02_Assemblies/Bicycle_Main_Assembly.step"><small>STEP / ASSEMBLY</small><strong>Complete bicycle<br>concept assembly</strong><span>Static placement · millimetres ↗</span></a>
+        <a href="01_Parts/Road_Frame.step"><small>STEP / FRAME</small><strong>Road frame<br>concept geometry</strong><span>Nominal tubes ↗</span></a>
+        <a href="01_Parts/Road_Frame_Skeleton.dxf"><small>DXF / LAYOUT</small><strong>Frame skeleton<br>side elevation</strong><span>DXF XY maps to project XZ ↗</span></a>
+        <a href="04_Reference_Data/design_parameters.json"><small>JSON / SOURCE</small><strong>Design parameters<br>& reference points</strong><span>Shared geometry source ↗</span></a>
+        <a href="06_Automation/SOLIDWORKS_BUILD.md"><small>GUIDE / SOLIDWORKS</small><strong>Native CAD<br>handoff guide</strong><span>Prepared, not run in SolidWorks ↗</span></a>
+      </div>
+      <p class="files-footnote"><strong>Read before reuse.</strong> The STEP assembly is a static concept, not a qualified bicycle. Supplier components, native SolidWorks features and mates, rider fit, structural analysis and production drawings remain pending.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="#top"><span class="mark">BD</span><span>BICYCLE<br>DESIGN PROJECT</span></a><p>Revision A · 7 November 2026<br>Engineering record · concept only · not for manufacture</p><a href="https://github.com/vijaykadam6651/Bicycle_Design_Project" target="_blank" rel="noreferrer">VIEW SOURCE ON GITHUB ↗</a></footer>
+</body>
+</html>
